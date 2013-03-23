@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS reset */
+html{color:#666;background:#fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;vertical-align:middle;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;vertical-align:middle;}input,textarea,select{*font-size:100%;}legend{color:#000;}body {font:13px/1.231 tahoma,arial,helvetica,sans-serif,"宋体";*font-size:small;*font:x-small;}table {width:100%;font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+/**/
+a{text-decoration:none; color:#3468af;}
+a:hover{text-decoration:underline;}
+
+a.lkcStyle1, a.lkcStyle1:hover{color:#3468af;} /*主链接*/
+a.lkcStyle2, a.lkcStyle2:hover{color:#649bc8;}	/*辅链接*/
+a.lkcStyle3, a.lkcStyle3:hover{color:#ff6600;} /*警告*/
+
+/*浮动*/
+.fl{float:left!important;}
+.fr{float:right!important;}
+/* clear fix */
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden; }  
+.clearfix{zoom:1;}
+.must{color:red;}
+
+/*文本框*/
+.text, textarea{
+	font-size:12px;
+	border:1px solid #c8c8c8;
+	background:#FFF;
+	/*background: -moz-linear-gradient(top, #E4E4E4, #FFF 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#E4E4E4),to(#FFF));*/
+}
+.text{
+	width:170px;
+	height:14px;
+	padding:7px;
+	line-height:14px;
+}
+textarea{
+	width:270px;
+	height:100px;
+	padding-left:5px;
+	overflow:auto;
+	resize:none;
+}
+.text:hover,
+textarea:hover { 
+	box-shadow:inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.text:focus,
+textarea:focus {
+	outline:none;
+	border-color:#4F8FE7;
+	box-shadow:0 0 5px  rgba(79, 143, 231, 0.6);
+}
+/**/
+/*网盘文件列表*/
+body{-webkit-user-select: none;}
+#dataListContainer{position:absolute;left:0;right:0;top:0;bottom:0;overflow:auto;}
+.boxList{overflow: auto;}
+.shareBoxList{top:35px !important;}
+.listStyleIco .dataListContainer{padding: 10px 5px 5px 10px;}
+/*列表显示*/
+.dataList li table{margin:0 auto;width:48px;height:48px;}
+.dataList li table td{width:48px;height:48px;vertical-align:middle;text-align:center;}
+.dataList li table td img{vertical-align:middle;width:40px;height:40px;border-radius:3px;}
+.dataList .fileType,.dataList li table{left:32px;position:absolute;top:9px;}
+
+.dataList li{border-bottom: 1px solid #C9CACA;cursor: default;height: 50px;line-height: 20px;padding: 8px 100px 8px 85px;position: relative;vertical-align:top;}
+.dataList li.iShare .shareIco{display:block;width:55px;height:26px;position:absolute;background:url(images/iShare.png) 0 -26px no-repeat;left:32px;top:38px;}
+.dataList li:hover, .dataList li.hover, .dataList li.focus{background-color:#F8F8F8;}
+.dataList input{position: absolute;left: 13px;top: 26px;_left:8px;_top:20px;}
+
+.dataList .fileType,.dataList li table{left: 32px;position: absolute;top: 9px;}
+
+
+
+.dataList .fileName{padding-top:5px;overflow: hidden;white-space: nowrap;color:#595757;text-align:center;}
+.dataList .fileName a:hover{text-decoration:none;color:#5096D1;}
+.dataList .fileInfo{padding-bottom:5px;color: #9FA0A0;height: 20px;overflow: hidden;white-space: nowrap;text-align: center;}
+
+
+.dataList .fileOpt{height: 16px;position: absolute;right: 20px;top: 22px;}
+.fileOpt a{display: inline-block;float: left;height: 16px;line-height: 10;margin-left: 15px;overflow: hidden;width: 16px;}
+.dataList .fileOpt a{}
+
+/*图标显示*/
+.listStyleIco li{border: 1px solid #FFFFFF;float: left;height: 145px;margin: 5px;padding: 20px 5px 0;width: 110px;overflow:hidden;}
+.listStyleIco li table{margin:0 auto;border:1px solid #ddd;position:static;width:90px;height:90px;}
+.listStyleIco li table td{width:90px;height:90px;vertical-align:middle;text-align:center;}
+.listStyleIco li table td img{vertical-align:middle;width:auto;height:auto;}
+
+.listStyleIco li:hover, .listStyleIco li.hover, .listStyleIco li.focus{background-color:#FcFcFc;border-color: #C8C8C8;box-shadow:0px 0px 1px rgba(0, 0, 0, 0.2);border-radius: 2px;}
+.listStyleIco input{display: none;left: 5px;top: 5px;}
+.listStyleIco li:hover input, .listStyleIco .focus input, .listStyleIco .hover input{display:block;}
+.listStyleIco .fileType, .fileDetail .fileType{display:block;margin:0 auto;position:relative;background-image:url(undefind.png);height: 90px;width: 90px;left:auto;top:auto;}
+.fileDetail i{width:90px;height:90px;}
+.listStyleIco .iShare .fileType span, .fileDetail .iShare .fileType span, .boxList .iShare .fileType span{display:block;position:absolute;width:24px;height:24px;right:0;bottom:0;}
+.listStyleIco li.iShare .shareIco{display:block;width:55px;height:26px;position:absolute;left:5px;top:90px;}
+
+/*图标文件类型*/
+.listStyleIco .FtFolder, .fileDetail .FtFolder{background-image:url(folder.png);}
+
+
+
+
+.
