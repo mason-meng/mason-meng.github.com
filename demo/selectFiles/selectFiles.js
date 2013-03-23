@@ -1,3 +1,10 @@
+/* Desc  : like window select the files and folders function
+ * Author: Mason Meng
+ * Email : mason.meng@yahoo.com
+ * Date  : 2012-08-16
+ * Blog  : http://f2ecoder.com
+ * web   : http://artf2e.com
+ */
 (function($){
 	var oThis = {}, oVar = {}, isCount = true;
 		oVar.isSelect = false;
