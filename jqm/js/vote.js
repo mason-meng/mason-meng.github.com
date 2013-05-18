@@ -1,6 +1,8 @@
-alert(111111);
 ;(function($){
 	$(function(){
-		alert('2323')
+		$('.eCommentTextArea').click(function(){
+			var oThis = $(this);
+			oThis.addClass('focus');
+		})
 	})
 })(jQuery);
