@@ -1,0 +1,57 @@
+.clearfix{}
+.clearfix:after{display:block;content:'.';height:0;font-size:0;overflow:hidden;clear:both;}
+
+.icon{background:url(images/icon_vote.png) left top no-repeat;display:inline-block;width:20px;height:20px;}
+.icon_grid{background-position:2px 2px;height:25px;margin-right:5px;}
+
+
+.vote_title{height:128px;background:url(images/vote_x.png) left -155px repeat-x;border:1px solid #ccc;border-width:1px 0;}
+.vote_title img{float:left;padding:20px;}
+.vote_title .vote_title_info{padding-left:110px;padding-top:22px;}
+.vote_title .vote_title_info h2{margin:0;padding:0;font-size:26px;}
+.vote_title .vote_title_info p{margin:0;padding:3px 0;line-height:1.231;font-size:13px;}
+.voted, .voting, .endVote{background-color:#f81f0f;font-size:14px;color:white;padding:2px 5px;display:inline-block;}
+.voting, .endVote{background-color:#e67511;}
+.ui-content{padding:0;}
+.vote_info{padding:20px;}
+.vote_info h1{font-size:24px;font-weight:bold;}
+.vote_atts{margin-bottom:10px;background:url(images/vote_x.png) left -75px repeat-x;border:1px solid #ccc;height:75px;line-height:75px;vertical-align:middle;}
+.vote_atts img{vertical-align:middle;margin:10px;}
+.vote_atts .download{width:60px;height:74px;float:right;background:url(images/download.png) left top no-repeat;overflow:hidden;text-indent:-999em;}
+.rate_box{margin:10px 0;}
+.rate_slip{margin-right:10px;display:inline-block;height:16px;background:url(./images/vote_x.png) left -50px repeat-x;border:1px solid #1a80d6;border-radius:3px;}
+.rate_num{display:inline-block;vertical-align:top;}
+.vote_btn{margin-left:40px;font-size:20px;padding:9px 20px;border-radius:4px;border:1px solid #016bbd;background:url(./images/vote_x.png) left top repeat-x;color:white;}
+.radio_style{float:left;margin:0;}
+.radio_style .ui-btn-inner{width:22px;height:22px;padding:1px!important;border-top:none;}
+.radio_style .ui-btn-inner .ui-icon{left:3px;}
+.radio_style .ui-checkbox .ui-btn{border-radius:3px;}
+.radio_style input{opacity:0;}
+.vote_list .ui-btn{margin:0;}
+.vote_list p{font-size:20px;}
+
+.comment_title{padding-left:10px;background:url(images/vote_x.png) left -75px repeat-x;height:44px;line-height:44px;border:1px solid #ccc;border-width:1px 0;}
+.comment{padding:0 10px;padding:0 20px;}
+.comment .focus{height:150px;}
+.comment .btn{color:#555;width:50%;height:50px;display:inline-block;border:1px solid #c5c5c5;line-height:50px;text-align:center;margin-right:-8px;margin-top:-15px;text-decoration:none;background:#f8f8f8 url(images/vote_x.png) left -290px repeat-x;}
+.comment .btn:hover{text-decoration:none;color:#555;}
+.comment #commentForm{position:relative;}
+.comment #commentForm label{position:absolute;left:5px;top:5px;}
+
+.commentListBox{margin:0 20px;}
+.commentListBox dl{padding:20px 0;border-bottom:1px solid #ccc;}
+.commentListBox dl dt{float:left;}
+.commentListBox dl dd{float:left;margin-left:10px;}
+.commentListBox dl dd span{color:#7d7d7d;display:inline-block;margin-top:5px;}
+.commentListBox dl dd p{color:#030303;margin:10px 0;}
+
+.getMore{text-align:center;}
+.getMore a{font-size:20px;text-align:center;display:inline-block;height:50px;line-height:50px;}
+
+
+.vote_lists{height:128px;border:1px solid #ccc;border-width:0 0 1px 0;margin:0;overflow:hidden;}
+.vote_lists dt{float:left;padding:20px;}
+.vote_lists .vote_list_info{padding-left:110px;padding-top:22px;margin:0;}
+.vote_lists .vote_list_info h2{margin:0;padding:0;font-size:26px;}
+.vote_lists .vote_list_info p{margin:0;padding:3px 0;line-height:1.231;font-size:13px;}
+
