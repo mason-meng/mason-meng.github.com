@@ -33,7 +33,7 @@
 .comment_title{padding-left:10px;background:url(images/vote_x.png) left -75px repeat-x;height:44px;line-height:44px;border:1px solid #ccc;border-width:1px 0;}
 .comment{padding:0 10px;padding:0 20px;}
 .comment .focus{height:150px;}
-.comment .btn{color:#555;width:50%;height:50px;display:inline-block;border:1px solid #c5c5c5;line-height:50px;text-align:center;margin-right:-8px;margin-top:-15px;text-decoration:none;background:#f8f8f8 url(images/vote_x.png) left -290px repeat-x;}
+.comment .btn{color:#555;width:50%;height:50px;display:none;border:1px solid #c5c5c5;line-height:50px;text-align:center;margin-right:-8px;margin-top:0px;text-decoration:none;background:#f8f8f8 url(images/vote_x.png) left -290px repeat-x;}
 .comment .btn:hover{text-decoration:none;color:#555;}
 .comment #commentForm{position:relative;}
 .comment #commentForm label{position:absolute;left:5px;top:5px;}
@@ -45,8 +45,7 @@
 .commentListBox dl dd span{color:#7d7d7d;display:inline-block;margin-top:5px;}
 .commentListBox dl dd p{color:#030303;margin:10px 0;}
 
-.getMore{text-align:center;}
-.getMore a{font-size:20px;text-align:center;display:inline-block;height:50px;line-height:50px;}
+.getMore{text-align:center;display:block;font-size:20px;text-align:center;height:50px;line-height:50px;}
 
 
 .vote_lists{height:128px;border:1px solid #ccc;border-width:0 0 1px 0;margin:0;overflow:hidden;}

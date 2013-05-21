@@ -114,44 +114,17 @@
 				<form id="commentForm" method="POST" action="">
 					<label for="comment">输入文本...</label>
 					<textarea class="eCommentTextArea" id="comment" maxlength="150" name="comment"></textarea>
-					<a class="btn eCommentBtn" href="javascript:void(0);">确定</a>
+					<a class="btn eCommentBtn" data-form="#commentForm" data-url="tmpdata.php?type=comment" href="javascript:void(0);">确定</a>
 					<a class="btn eCancelBtn" href="javascript:void(0);">取消</a>
 				</form>
 			</div>
-			
+			<input type="hidden" class="eGetCommentList" data-target="#commentLists" data="id=0&limit=10" data-url="tmpdata.php?type=more" val="" />
 			<div id="commentLists" class="commentListBox">
-				<dl class="clearfix">
-					<dt><img src="./images/avator.png" title="#" /></dt>
-					<dd>
-						<span>2013-12-12</span>
-						<p>Mason: I don't like OT!!!!!!</p>
-					</dd>
-				</dl>
-				<dl class="clearfix">
-					<dt><img src="./images/avator.png" title="#" /></dt>
-					<dd>
-						<span>2013-12-12</span>
-						<p>Mason: I don't like OT!!!!!!</p>
-					</dd>
-				</dl>
-				<dl class="clearfix">
-					<dt><img src="./images/avator.png" title="#" /></dt>
-					<dd>
-						<span>2013-12-12</span>
-						<p>Mason: I don't like OT!!!!!!</p>
-					</dd>
-				</dl>
-				<dl class="clearfix">
-					<dt><img src="./images/avator.png" title="#" /></dt>
-					<dd>
-						<span>2013-12-12</span>
-						<p>Mason: I don't like OT!!!!!!</p>
-					</dd>
-				</dl>
+				
 			</div>
 			
-			<div class="getMore">
-				<a href="javascrit:void(0);">获取更多评论</a>
+			<div class="page">
+				<a class="getMore" href="javascript:void(0);" data-url="tmpdata.php?type=more" data="lastId=2223223&limit=10">获取更多评论</a>
 			</div>
 			
 		</div>
